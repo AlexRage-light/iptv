@@ -1,1 +1,1 @@
-declare module 'markdown-include'
+declare module "markdown-include";

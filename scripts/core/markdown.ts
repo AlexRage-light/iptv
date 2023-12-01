@@ -1,13 +1,13 @@
-import markdownInclude from 'markdown-include'
+import markdownInclude from "markdown-include";
 
 export class Markdown {
-  filepath: string
+  filepath: string;
 
   constructor(filepath: string) {
-    this.filepath = filepath
+    this.filepath = filepath;
   }
 
   compile() {
-    markdownInclude.compileFiles(this.filepath)
+    markdownInclude.compileFiles(this.filepath);
   }
 }

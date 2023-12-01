@@ -1,12 +1,12 @@
-import { execSync } from 'child_process'
+import { execSync } from "child_process";
 
-it('can create report', () => {
+it("can create report", () => {
   const stdout = execSync(
-    'DATA_DIR=tests/__data__/input/data STREAMS_DIR=tests/__data__/input/streams_report npm run report:create',
+    "DATA_DIR=tests/__data__/input/data STREAMS_DIR=tests/__data__/input/streams_report npm run report:create",
     {
-      encoding: 'utf8'
-    }
-  )
+      encoding: "utf8",
+    },
+  );
 
   expect(
     stdout.includes(`
@@ -21,6 +21,6 @@ it('can create report', () => {
 │    5    │    14177    │  'streams:add'  │      'TUTV.us'      │  'fullfilled'  │
 │    6    │    14178    │  'streams:add'  │      'TV3.my'       │   'blocked'    │
 │    7    │    14179    │  'streams:add'  │  'ManoramaNews.in'  │   'pending'    │
-└─────────┴─────────────┴─────────────────┴─────────────────────┴────────────────┘`)
-  ).toBe(true)
-})
+└─────────┴─────────────┴─────────────────┴─────────────────────┴────────────────┘`),
+  ).toBe(true);
+});
