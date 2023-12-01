@@ -1,19 +1,19 @@
-import { Collection } from '@freearhey/core'
+import { Collection } from "@freearhey/core";
 
 type RegionProps = {
-  code: string
-  name: string
-  countries: string[]
-}
+  code: string;
+  name: string;
+  countries: string[];
+};
 
 export class Region {
-  code: string
-  name: string
-  countries: Collection
+  code: string;
+  name: string;
+  countries: Collection;
 
   constructor({ code, name, countries }: RegionProps) {
-    this.code = code
-    this.name = name
-    this.countries = new Collection(countries)
+    this.code = code;
+    this.name = name;
+    this.countries = new Collection(countries);
   }
 }

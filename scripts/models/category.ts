@@ -1,14 +1,14 @@
 type CategoryProps = {
-  id: string
-  name: string
-}
+  id: string;
+  name: string;
+};
 
 export class Category {
-  id: string
-  name: string
+  id: string;
+  name: string;
 
   constructor({ id, name }: CategoryProps) {
-    this.id = id
-    this.name = name
+    this.id = id;
+    this.name = name;
   }
 }
